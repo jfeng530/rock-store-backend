@@ -15,7 +15,35 @@ Rock.create(name:"Torbernite", image_url:"https://cdn.irocks.com/storage/media/5
 Rock.create(name:"Fluorite", image_url:"https://geology.com/minerals/photos/fluorite.jpg", description:'Fluorite is an important industrial mineral composed of calcium and fluorine (CaF2). It is used in a wide variety of chemical, metallurgical, and ceramic processes. Specimens with exceptional diaphaneity and color are cut into gems or used to make ornamental objects. Fluorite is deposited in veins by hydrothermal processes. In these rocks it often occurs as a gangue mineral associated with metallic ores. Fluorite is also found in the fractures and cavities of some limestones and dolomites. It is a very common rock-forming mineral found in many parts of the world. In the mining industry, fluorite is often called "fluorspar.', price:50, category:"Fancy", color:"Blue", rating:4, quantity:13)
 
 #Users:
+admin = User.new
+admin.username = 'admin'
+admin.password = 'iloverocks'
+admin.password_confirmation = 'iloverocks'
+admin.admin = true
+admin.save
 
+test_user = User.new
+test_user.username = "test_user"
+test_user.password = 'ilikerocks'
+test_user.password_confirmation = 'ilikerocks'
+test_user.save
 
+rocks_bro_4_lyfe = User.new
+rocks_bro_4_lyfe.username = "rocks_bro_4_lyfe"
+rocks_bro_4_lyfe.password = 'ilikerocks'
+rocks_bro_4_lyfe.password_confirmation = 'ilikerocks'
+rocks_bro_4_lyfe.save
 
+#Orders:
+Order.create(user_id: 1)
+Order.create(user_id: 2)
+Order.create(user_id: 3)
+Order.create(user_id: 2)
+Order.create(user_id: 3)
+Order.create(user_id: 3)
+
+#Purchases:
+10.times do
+    Purchase.create(rock_id:rand(1...13), order_id:rand(1...6), quantity:rand(1..10))
+end
 puts "Successful seed!"
