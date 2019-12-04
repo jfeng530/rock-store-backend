@@ -10,6 +10,15 @@ class PurchasesController < ApplicationController
       render json: purchase.to_json
     end
 
+    def create
+      purchase = Purchase.create(purchase_params)
+      if purchase.valid? 
+        render json: purchase 
+      else
+        render json: { errors: purchase.errors.full_messages }, status: :unprocessable_entity
+      end 
+    end 
+
     private
 
     def purchase_params
