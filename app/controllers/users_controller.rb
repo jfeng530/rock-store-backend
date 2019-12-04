@@ -1,9 +1,7 @@
 class UsersController < ApplicationController
     def index
         users = User.all
-        render json: users.to_json(:include => {
-            :orders => {:only => [:id, :user_id]}
-          })
+        render json: users
     end
 
     def show

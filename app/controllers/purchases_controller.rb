@@ -2,12 +2,12 @@ class PurchasesController < ApplicationController
 
     def index
         purchases = Purchase.all
-        render json: purchases.to_json
+        render json: purchases
     end
 
     def show
       purchase = Purchase.find(params[:id])
-      render json: purchase.to_json
+      render json: purchase
     end
 
     def create
