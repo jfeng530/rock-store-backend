@@ -17,6 +17,15 @@ class OrdersController < ApplicationController
       })
     end
 
+    def create
+      order = Order.create(order_params)
+      if order.valid?
+        render json: order
+      else
+        render json: { errors: order.errors.full_messages }  
+      end 
+    end 
+
     private
 
     def order_params
