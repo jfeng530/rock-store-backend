@@ -4,7 +4,9 @@ class UserSerializer < ActiveModel::Serializer
   def orders
     self.object.orders.map do |order|
       {id: order.id,
+      checkedout: order.checkedout,
       purchases: order.purchases}
     end
   end
+
 end

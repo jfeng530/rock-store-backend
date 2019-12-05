@@ -1,3 +1,3 @@
 class PurchaseSerializer < ActiveModel::Serializer
-  attributes :id, :rock_id, :order_id, :quantity
+  attributes :id, :rock, :order_id, :quantity
 end
