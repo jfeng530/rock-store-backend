@@ -35,12 +35,12 @@ rocks_bro_4_lyfe.password_confirmation = 'ilikerocks'
 rocks_bro_4_lyfe.save
 
 #Orders:
-Order.create(user_id: 1)
-Order.create(user_id: 2)
-Order.create(user_id: 3)
-Order.create(user_id: 2)
-Order.create(user_id: 3)
-Order.create(user_id: 3)
+Order.create(user_id: 1, checkedout: false)
+Order.create(user_id: 2, checkedout: true)
+Order.create(user_id: 2, checkedout: false)
+Order.create(user_id: 3, checkedout: true)
+Order.create(user_id: 3, checkedout: true)
+Order.create(user_id: 3, checkedout: false)
 
 #Purchases:
 10.times do
