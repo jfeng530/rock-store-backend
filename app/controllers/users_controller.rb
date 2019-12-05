@@ -31,9 +31,13 @@ class UsersController < ApplicationController
           render json: user.to_json
         else
         render json: user.errors, status: :unprocessable_entity
-        end
-        
+        end 
       end
+
+
+  def destroy
+    User.destroy(params[:id])
+  end
       
   
       private
