@@ -19,6 +19,10 @@ class PurchasesController < ApplicationController
       end 
     end 
 
+    def destroy
+      Purchase.destroy(params[:id])
+    end
+
     private
 
     def purchase_params
