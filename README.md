@@ -13,7 +13,7 @@ This repo only contains the **Front-End** (React) portion.
 * [Ruby on Rails](https://rubyonrails.org/)
 
 #### Link to Front-End
-* [Rock Shop Front-End](https://github.com/jfeng530/rock-store-frontend)
+* [Rock Shop Front-End](https://github.com/jfeng530/rock-shop-frontend)
 
 ## Installation
 
