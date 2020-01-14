@@ -1,35 +1,86 @@
 # Rock Shop
-Rock Shop is a project made by my partner, Noam Sauer-Utley ([@noamsauerutley](https://github.com/noamsauerutley)) and I. It is an e-commerce website for purchasing rocks.
+<p>
+  <img align="center" src="https://img.shields.io/badge/PostgreSQL-12.1-336791">
+  <img align="center" src="https://img.shields.io/badge/React-16.12.0-61DAFB">
+  <img align="center" src="https://img.shields.io/badge/Ruby-2.6.1-CC342D">
+  <img align="center" src="https://img.shields.io/badge/Ruby%20On%20Rails-6.0.1-cc0600">
+</p>
 
-## Languages and Frameworks
-This repo only contains the **Front-End** (React) portion.
+# Contents
+- [Overview](#overview)
+  - [Description](#description)
+  - [Features](#features)
+  - [Challenges](#challenges)
+  - [Technologies & Frameworks](#technologies-and-frameworks)
+- [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+    - [Instructions](#instructions)
+    - [Back-End](#back-end-1)
+- [Credits](#credits)
+- [License](#license)
 
-### Front-End
-* Vanilla JavaScript
-* [React](https://www.reactjs.org/)
+&nbsp;
 
-### Back-End
-* [Ruby](https://www.ruby-lang.org/tr/)
-* [Ruby on Rails](https://rubyonrails.org/)
+# Overview
+  ### Description
+  Rock Shop is an e-commerce web application for purchasing rocks. It utilizes React with inline CSS for a dynamic and interactive user experience. Rock Shop manages user authentication, cart funtionality and purchases using JWT, localStorage and a Ruby on Rails backend.
+  
+  ### Features
+  - View, sort and filter rocks by category, price, rating and rarity 
+  - Create an account with unique username and password along with log-in/log-out functionality
+  - Add and remove items to a cart where it will be saved and stored in backend
+  - On log-in, user's most recent cart (along with its items) will be loaded and rendered
+  - View previous purchases (with items, price and total)
+  - Edit, update and delete user account information 
+  
+  ### Challenges
+  - The data in the reference API used to create the back-end did not include season totals for players.
+    - Required mapping over all players and comuting their season totals and thus their averages as well.
+    - Had to account for a player that was traded mid-season (each team played for that year would represent a new instance of season)
+    - Function written to compute season totals was an O(n²) algorithm
+  - Simulation algorithm needed to return accurate and realistic statistics that reflect a player's performance from that year
+    - Decided on 'Normal Probability Model' as foundation for algorithm
+    - Used gems [Rubystats](https://github.com/phillbaker/rubystats) and [Ruby Native Statistics](https://github.com/corybuecker/ruby-native-statistics) to randomly generate a statistic based on normal distribution (relative to player's season performance)
+    
+  ### Technologies and Frameworks
+  #### Front-End
+  - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+  - [React](https://reactjs.org/)
+  - [React Router](https://reacttraining.com/react-router/)
+  
+  #### Back-End
+  - [Ruby](https://www.ruby-lang.org/en/)
+  - [Ruby on Rails](https://www.rubyonrails.org/)
+  - [PostgreSQL](https://www.postgresql.org/)
+  - [JWT](https://www.jwt.io/)
+  - [bcrypt-ruby](https://github.com/codahale/bcrypt-ruby)
+  - [ActiveModelSerializers](https://github.com/rails-api/active_model_serializers)
 
-#### Link to Front-End
-* [Rock Shop Front-End](https://github.com/jfeng530/rock-shop-frontend)
+&nbsp;
+ 
+# Installation
+  ### Prerequisites
+  Rock Shop is built on React, Ruby, Ruby on Rails & PostgreSQL. Make sure you have the latest versions of all four components installed before cloning this repo. You can find their official installation guides below:
+  - [React](https://reactjs.org/docs/getting-started.html)
+  - [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+  - [Ruby On Rails](https://guides.rubyonrails.org/v5.0/getting_started.html)
+  - [PostgreSQL](https://www.postgresqltutorial.com/)
+  
+  ### Instructions
+  - Clone the most recent branch in this repository
+  > Make sure you are in the project path before running the commands
+  - Run `npm install` in your bash-enabled terminal to make sure all dependancies are installed
+  - Run `npm start` to start and launch local server on your browser
+  
+  ### Back-End
+  [Rock Shop Back-End](https://github.com/jfeng530/rock-store-backend)
 
-## Installation
+&nbsp;
 
-Clone or fork-clone this repo. Then use the package manager **bundle** to install packages locally. From there, in your bash terminal, type the following lines to run the Rails server.
+# Credits
+  - [Noam Sauer-Utley](https://github.com/noamsauerutley)
 
-> Make sure you are in the Project Path before typing the commands.
+# License
+<a href="https://github.com/jfeng530/nba_frontend/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/jfeng530/nba_frontend?color=blue"></a>
 
-```bash
-1. rails db:create
-2. rails db:migrate
-3. rails db:reset
-4. rails s
-```
-Be sure to go to the link above to download and install the front-end for this project.
-
-## Contributing
-Pull requests are more than welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-> This project does not have any test. For any changes on project, you can ignore tests.
+Copyright 2019 © [Jacky Feng](https://github.com/jfeng530)
