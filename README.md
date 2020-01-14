@@ -72,8 +72,8 @@
   - Run `npm install` in your bash-enabled terminal to make sure all dependancies are installed
   - Run `npm start` to start and launch local server on your browser
   
-  ### Back-End
-  [Rock Shop Back-End](https://github.com/jfeng530/rock-store-backend)
+  ### Front-End
+  [Rock Shop Front-End](https://github.com/jfeng530/rock-store-frontend)
 
 &nbsp;
 
