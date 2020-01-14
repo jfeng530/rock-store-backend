@@ -84,6 +84,6 @@
   - [Noam Sauer-Utley](https://github.com/noamsauerutley)
 
 # License
-<a href="https://github.com/jfeng530/rock-shop-frontend/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/jfeng530/rock-shop-frontend?color=blue"></a>
+<a href="https://github.com/jfeng530/rock-store-backend/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/jfeng530/rock-store-backend?color=blue"></a>
 
 Copyright 2019 © [Jacky Feng](https://github.com/jfeng530)
