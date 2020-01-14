@@ -76,7 +76,7 @@
   - Run `rails s` to start up a local server
   
   ### Front-End
-  [Rock Shop Front-End](https://github.com/jfeng530/rock-store-frontend)
+  [Rock Shop Front-End](https://github.com/jfeng530/rock-shop-frontend)
 
 &nbsp;
 
