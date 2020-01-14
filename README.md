@@ -34,13 +34,11 @@
   - Edit, update and delete user account information 
   
   ### Challenges
-  - The data in the reference API used to create the back-end did not include season totals for players.
-    - Required mapping over all players and comuting their season totals and thus their averages as well.
-    - Had to account for a player that was traded mid-season (each team played for that year would represent a new instance of season)
-    - Function written to compute season totals was an O(n²) algorithm
-  - Simulation algorithm needed to return accurate and realistic statistics that reflect a player's performance from that year
-    - Decided on 'Normal Probability Model' as foundation for algorithm
-    - Used gems [Rubystats](https://github.com/phillbaker/rubystats) and [Ruby Native Statistics](https://github.com/corybuecker/ruby-native-statistics) to randomly generate a statistic based on normal distribution (relative to player's season performance)
+  - Figuring out how the classes in the backend will interact with one another to form a fully functioning e-commerce application 
+    - Individual cart items became a "joiner-class" (`Purchase`), joining the `Rock` class and the `Order` class
+    - Every time an item is added to a cart, a `Purchase` instance is created with the specific `Rock` and the current `Order` (cart)
+  - Rendering the current cart associated to user when user logs in
+    - Using [JWT](https://www.jwt.io/) and [ActiveModelSerializers](https://github.com/rails-api/active_model_serializers), token, user information and cart information is sent to the front-end to render the correct user along with their current cart
     
   ### Technologies and Frameworks
   #### Front-End
