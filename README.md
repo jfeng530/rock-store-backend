@@ -15,7 +15,7 @@
 - [Installation](#installation)
     - [Prerequisites](#prerequisites)
     - [Instructions](#instructions)
-    - [Back-End](#back-end-1)
+    - [Front-End](#front-end-1)
 - [Credits](#credits)
 - [License](#license)
 
@@ -69,8 +69,11 @@
   ### Instructions
   - Clone the most recent branch in this repository
   > Make sure you are in the project path before running the commands
-  - Run `npm install` in your bash-enabled terminal to make sure all dependancies are installed
-  - Run `npm start` to start and launch local server on your browser
+  - Run `bundle install` in your bash-enabled terminal to make sure all dependancies are installed
+  - Run `rails db:create` to create a local PostgreSQL database
+  - Run `rails db:migrate` to create the schema for said database
+  - Run `rails db:seed` to seed the database
+  - Run `rails s` to start up a local server
   
   ### Front-End
   [Rock Shop Front-End](https://github.com/jfeng530/rock-store-frontend)
