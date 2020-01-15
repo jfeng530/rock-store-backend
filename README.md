@@ -27,7 +27,7 @@
   
   ### Features
   - View, sort and filter rocks by category, price, rating and rarity 
-  - Create an account with unique username and password along with log-in/log-out functionality
+  - Create an account with a unique username and password along with log-in/log-out functionality
   - Add and remove items to a cart where it will be saved and stored in backend
   - On log-in, user's most recent cart (along with its items) will be loaded and rendered
   - View previous purchases (with items, price and total)
