@@ -28,10 +28,10 @@
   ### Features
   - View, sort and filter rocks by category, price, rating and rarity 
   - Create an account with a unique username and password along with log-in/log-out functionality
-  - Add and remove items to a cart where it will be saved and stored in backend
-  - On log-in, user's most recent cart (along with its items) will be loaded and rendered
-  - View previous purchases (with items, price and total)
-  - Edit, update and delete user account information 
+  - Add and remove items to a cart where they will be saved and stored in backend
+  - Upon logging in, the user's most recent cart (along with its items) will be loaded and rendered
+  - View previous purchases (with items, price, and total)
+  - Edit, update, and delete user account information 
   
   ### Challenges
   - Figuring out how the classes in the backend will interact with one another to form a fully functioning e-commerce application 
@@ -58,7 +58,7 @@
  
 # Installation
   ### Prerequisites
-  Rock Shop is built on React, Ruby, Ruby on Rails & PostgreSQL. Make sure you have the latest versions of all four components installed before cloning this repo. You can find their official installation guides below:
+  Rock Shop is built on React, Ruby, Ruby on Rails and PostgreSQL. Make sure you have the latest versions of all four components installed before cloning this repo. You can find their official installation guides below:
   - [React](https://reactjs.org/docs/getting-started.html)
   - [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
   - [Ruby On Rails](https://guides.rubyonrails.org/v5.0/getting_started.html)
